@@ -23,3 +23,17 @@ Create inventory hosts file:
 Then Run
       
 $ ansible-playbook  -i hosts site.yaml 
+
+### Config yarn
+```
+[root@hadoop-00 conf]# yum install net-tools -y
+[root@hadoop-00 conf]# diff yarn-site.xml yarn-site.xml.ORIG
+6,9d5
+<   <property> 
+<     <name>yarn.resourcemanager.webapp.address</name>
+<     <value>0.0.0.0:8088</value>
+<   </property>
+[root@hadoop-00 conf]# systemctl restart hadoop-yarn-resourcemanager
+[root@hadoop-00 conf]# netstat -nlpt|grep 8088
+tcp6       0      0 :::8088                 :::*                    LISTEN      16599/java          
+```
