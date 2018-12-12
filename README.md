@@ -24,7 +24,8 @@ Then Run
       
 $ ansible-playbook  -i hosts site.yaml 
 
-### Config yarn
+### Config yarn  | resourcemanager:   | http://192.168.102.100:8088  |
+
 ```
 [root@hadoop-00 conf]# yum install net-tools -y
 [root@hadoop-00 conf]# diff yarn-site.xml yarn-site.xml.ORIG
