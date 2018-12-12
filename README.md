@@ -1,7 +1,7 @@
 # Cloudera  Hadoop using ansible + vagrant
 
-launch Cloudera Hadoop 
-(Latest now is CDH 5.16.1 Release Date: November 28, 2018 Status: Production)
+Launch Cloudera Hadoop 
+(Latest release: CDH 5.16.1 Release Date: November 28, 2018 Status: Production)
 
 Edit Vagrantfile regarding your setup
 
