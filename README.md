@@ -26,5 +26,5 @@ Then Run
       
 $ ansible-playbook  -i hosts site.yaml 
 
-### | resourcemanager:   | http://192.168.102.100:8088  |
+### | resourcemanager:   | http://hadoopmaster_ip:8088  |
 
